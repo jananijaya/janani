@@ -1,0 +1,299 @@
+<main id="main">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Employee Performance Review (Office)</p>
+    <form id="survey-form">
+      <div class="form-section" id="General-info">
+        <h2>General Information</h2>
+        <div class="form-item">
+          <div class="label">
+            <label id="name-label" for="name">Name:</label>
+          </div>
+          <div class="entry">
+            <input autofocus type="text" id="name" class="entry-field" name="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="designation-label" for="designation">Designation:</label>
+          </div>
+          <div class="entry">
+            <input autofocus type="text" id="designation" class="entry-field" name="designation" placeholder="Enter Your Position" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label for="department">Department:</label>
+          </div>
+          <div class="entry">
+            <select id="dropdown" name="department">
+            <option disabled value>Select your department</option>
+            <option value="finance">Accounts</option>
+            <option value="Human-Resources">HR</option>
+            <option Value="Design">Design & Proposals</option>
+            <option value="Commercial">Procurement</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+          </select>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="epnumber-label" for="employee-number">Employee Number:</label>
+          </div>
+          <div class="entry">
+            <input type="number" min="1" name="employee-number" id="employee-number" class="entry-field" placeholder="Enter your employee number" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="number-label" for="age">Age:</label>
+          </div>
+          <div class="entry">
+            <input type="number" name="age" id="number" class="entry-field" placeholder="How old are You?" min="1" max="100" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="gender-label" for="gender">Gender:</label>
+          </div>
+          <div class="entry">
+            <div id="gender">
+              <label>
+              <input type="radio" name="gender-radio" class="gender" value="Male">Male
+            </label>
+              <label>
+              <input type="radio" name="gender-radio" class="gender" value="Female">Female
+            </label>
+              <label>
+             <input type="radio" name="gender-radio" class="gender" value="Other">Other 
+            </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="joining-date-label" for="joining-date">Joining Date:</label>
+          </div>
+          <div class="entry">
+            <input autofocus type="date" id="joining-date" class="entry-field" name="joining-date" placeholder="Enter your joining date" required>
+          </div>
+        </div>
+        <div class="form-item">
+          <div class="label">
+            <label id="email-label" for="email">Email:</label>
+          </div>
+          <div class="entry">
+            <input type="email" name="email" id="email" class="entry-field" placeholder="Enter your email" required>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-section" id="evaluation">
+        <h2>Evaluation</h2>
+        
+        <div class="form-item">
+         <div class="label">
+           <label id="job-knowledge-label" for="Job-knowledge-ranking">Job Knowledge:
+           </label>
+         </div>
+         <div class="entry" id="Job-knowledge-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="jobKnowledge-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="jobKnowledge-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="jobKnowledge-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="jobKnowledge-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="jobKnowledge-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+        <div class="form-item">
+         <div class="label">
+           <label id="task-ontime-label" for="task-ontime-ranking">On-time task completion:
+           </label>
+         </div>
+         <div class="entry" id="task-ontime-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="task-ontime-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="task-ontime-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="task-ontime-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="task-ontime-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="task-ontime-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+        <div class="form-item">
+         <div class="label">
+           <label id="punctuality-label" for="punctuality-ranking">Punctuality:
+           </label>
+         </div>
+         <div class="entry" id="punctuality-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="punctuality-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="punctuality-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="punctuality-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="punctuality-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="punctuality-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+       <div class="form-item">
+         <div class="label">
+           <label id="initiative-label" for="initiative-ranking">Initiative/Own Ideas:
+           </label>
+         </div>
+         <div class="entry" id="punctuality-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="initiative-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="initiative-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="initiative-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="initiative-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="initiative-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+       <div class="form-item">
+         <div class="label">
+           <label id="teamplayer-label" for="teamplayer-ranking">Teamplayer:
+           </label>
+         </div>
+         <div class="entry" id="teamplayer-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="teamplayer-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="teamplayer-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="teamplayer-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="teamplayer-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="teamplayer-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+       <div class="form-item">
+         <div class="label">
+           <label id="fitness-label" for="fitness-ranking">Fitness:
+           </label>
+         </div>
+         <div class="entry" id="fitness-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="fitness-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="fitness-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="fitness-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="fitness-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="fitness-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+        <div class="form-item">
+         <div class="label">
+           <label id="communication-label" for="communication-ranking">Communication:
+           </label>
+         </div>
+         <div class="entry" id="communication-ranking">
+           <label for="Excellent">
+             <input type="radio" id="Excellent" name="fitness-radio" value="Excellent">Excellent
+           </label>
+           <label for="Good">
+             <input type="radio" id="Good" name="fitness-radio" value="Good">Good
+           </label>
+           <label for="Satisfactory">
+             <input type="radio" id="Satisfactory" name="fitness-radio" value="Average">Satisfactory
+           </label>
+           <label for="Poor">
+             <input type="radio" id="Poor" name="fitness-radio" value="Poor">Poor
+           </label>
+           <label for="Very-Poor">
+             <input type="radio" id="Very-Poor" name="fitness-radio" value="Very Poor">Very Poor
+           </label>
+         </div>
+       </div>
+        
+       <div class="form-item">
+         <div class="label">
+           <label id="language-label" for="language-known">Languages known:
+           </label>
+         </div>
+         <div class="entry" id="language-known">
+           <label for="English">
+             <input type="checkbox" id="English" name="language-checkbox" value="English">English
+           </label>
+           <label for="Arabic">
+             <input type="checkbox" id="Arabic" name="language-checkbox" value="Arabic">Arabic
+           </label>
+           <label for="Hindi">
+             <input type="checkbox" id="Hindi" name="language-checkbox" value="Hindi">Hindi
+           </label>
+           <label for="other-language">
+             Others:
+           </label>
+           <input type="text" id="other-language" name="language-checkbox" placeholder="Please Specify"></input>
+           
+         </div>
+       </div>
+        
+       <div class="form-item">
+          <div class='label'>
+            <label for="comments">Comments:</label>
+          </div>
+          <div class="entry">
+            <textarea id="comments" class="entry-field" name="comments" style="height:100px;resize:verticle;" placeholder="Your Message..."></textarea>
+          </div>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <footer>
+      <p>Made By <a>Kadir</a></p>
+    </footer>
+  </main>
